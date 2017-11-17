@@ -5,7 +5,14 @@ var http = require('http');
 var app = express();
 
 var {getRequest,postRequest} = Request;
-console.log(getRequest,postRequest)
+app.all('*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+    res.header("X-Powered-By",' 3.2.1')
+    res.header("Content-Type", "application/json;charset=utf-8");
+    next();
+});
 // const $ = cheerio.load('<h2>HELLO MAN</h2>');
 // $('h2').text('hello women');
 // console.log($.html())
@@ -58,16 +65,19 @@ function getXLUrl(XLURL){
 			 	$(".downurl").find('li').each(function(){
 			 		let episode = $(this).text(); //剧集
 			 		let url = $(this).find("a").attr('href');  // 迅雷链接
+			 		
 			 		hash.push({
 			 			episode,
 			 			url
 			 		})
 			 	})
 			 	let story = $('#juqing .neirong').text(); // 剧情
+			 	let author = $(".zhuyan ul li").text();
 			 	let picture = $(".haibao img").attr('src');
 			 	resolve({
 			 		hash,
 			 		story,
+			 		author,
 			 		picture
 			 	});
 			 })

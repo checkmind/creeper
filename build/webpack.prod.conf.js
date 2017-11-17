@@ -22,6 +22,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
+    publicPath : './',
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     chunkFilename: utils.assetsPath('js/[name].[chunkhash].js')
@@ -39,14 +40,14 @@ const webpackConfig = merge(baseWebpackConfig, {
       sourceMap: config.build.productionSourceMap,
       parallel: true
     }),
-    // extract css into its own file
-    new ExtractTextPlugin({
-      filename: utils.assetsPath('css/[name].[contenthash].css'),
-      // set the following option to `true` if you want to extract CSS from
-      // codesplit chunks into this main css file as well.
-      // This will result in *all* of your app's CSS being loaded upfront.
-      allChunks: false,
-    }),
+    // // extract css into its own file
+    // new ExtractTextPlugin({
+    //   filename: utils.assetsPath('css/[name].[contenthash].css'),
+    //   // set the following option to `true` if you want to extract CSS from
+    //   // codesplit chunks into this main css file as well.
+    //   // This will result in *all* of your app's CSS being loaded upfront.
+    //   allChunks: false,
+    // }),
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.
     new OptimizeCSSPlugin({
