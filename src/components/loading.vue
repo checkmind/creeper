@@ -2,8 +2,8 @@
   <div>
     <div class="loading" v-if='show'>
       
-      <span></span>
-      <p>玩命兒加載中...</p>
+      
+      <p><span></span>玩命兒加載中...</p>
     </div>
   </div>
 </template>
@@ -36,6 +36,7 @@ export default {
 p {
   font-size: 12px;
   color: white;
+  text-align: center;
 }
 .loading{
   width: 100%;
@@ -59,7 +60,7 @@ p {
   border-left-color: white;
   border-radius:50%;
   -webkit-animation:circle .5s infinite linear;/*匀速 循环*/
-  position: absolute;
+  margin:0 auto;
 }
 @-webkit-keyframes circle{
   0%{ transform:rotate(0deg); }

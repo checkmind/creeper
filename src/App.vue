@@ -2,7 +2,7 @@
   <div id="app">
     <router-view></router-view>
     <myFooter></myFooter>
-    <a class="dxy-go-top dxy-go-top-square-white gotoTop" href="javascript:;" @click='moveTop'>
+    <a class="dxy-go-top dxy-go-top-square-white gotoTop" href="javascript:;" @click='moveTop' id="goTop">
       <i class="dxy-icon dxy-icon-arrow-up"></i>
     </a>
     <myLoading></myLoading>
@@ -71,7 +71,7 @@ a{
 .dxy-go-top-square-white:hover, .dxy-go-top-white:hover {
     color: #b5b5b5;
 }
-.dxy-go-top:hover {
+#goTop:hover {
     background: white;
 }
 </style>

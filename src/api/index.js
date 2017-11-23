@@ -3,6 +3,7 @@ promise.polyfill();
 import axios from 'axios'
 //const url = 'http://localhost:12570'
 const url = 'http://localhost:9528'
+//const url = '';
 export function getRecommend(){
 	return axios.get(url+'/recommend');
 }

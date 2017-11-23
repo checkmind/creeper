@@ -3,8 +3,15 @@ var Request = require('./lib/sendRequest');
 var cheerio = require('cheerio');
 var http = require('http');
 var app = express();
-
 var {getRequest,postRequest} = Request;
+
+app.use(express.static('dist'));
+
+app.get('/index.htm', function (req, res) {
+   res.sendFile( __dirname + "/" + "dist" );
+
+})
+
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
@@ -16,12 +23,18 @@ app.all('*', function(req, res, next) {
 // const $ = cheerio.load('<h2>HELLO MAN</h2>');
 // $('h2').text('hello women');
 // console.log($.html())
+let hash = [];  //电影的所有数据都在这里 全局推荐，每天更新一次
+let time = null;
 app.get('/recommend',function(req,res){
-	let newHash = [];
-	let hash = [];
+	console.log(time,new Date()-time<=24*60*60*1000)
+	if(time&&new Date()-time<=24*60*60*1000){
+		res.send(hash);
+		return;
+	}
+	time = new Date()
 	getRequest('http://www.dyxia.com/').then(function(data){  //抓取主页推荐
 		 	let $ = cheerio.load(data, {decodeEntities: false});
-		 	for(let i = 0;i<$('.commend li').length;i++){
+		 	for(let i = 0;i<5;i++){
 		 		 let moveName = $('.commend li').eq(i).find('strong a').text();
 		 		 let link = $('.commend li').eq(i).find('a').attr('href'); 
 		 		 hash.push({
@@ -30,11 +43,24 @@ app.get('/recommend',function(req,res){
 		 		 });
 		 	}
 		 	res.send(hash)
-		 	return hash;
 	})
-
+})
 /*
-	.then(function(hash){
+app.get('/recommend',function(req,res){
+	
+	getRequest('http://www.dyxia.com/').then(function(data){  //抓取主页推荐
+		 	let $ = cheerio.load(data, {decodeEntities: false});
+		 	for(let i = 0;i<5;i++){
+		 		 let moveName = $('.commend li').eq(i).find('strong a').text();
+		 		 let link = $('.commend li').eq(i).find('a').attr('href'); 
+		 		 hash.push({
+		 		 	moveName,
+		 		 	link
+		 		 });
+		 	}
+		 	//res.send(hash)
+		 	return hash;
+	}).then(function(hash){
 		let promisess = [];
 		hash.forEach(function(val,index){
 			promisess.push(getXLUrl(val.link).then(function(obj){
@@ -47,8 +73,8 @@ app.get('/recommend',function(req,res){
 	}).catch(function(err){
 		console.log(err)
 	})
-*/
 })
+*/
 
 app.get('/getXLUrl',function(req,res){
 	getXLUrl(req.query.link).then(function(obj){
