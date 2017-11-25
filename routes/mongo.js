@@ -6,42 +6,45 @@ var db = mongoose.connection;
 
 var Schema = mongoose.Schema;
 
-var users = new Schema({
-	username :  { type : String ,required :  true, unique:true },
-	password :  { type : String ,required :  true,unique:false },
-	friend : [{
-		username : String 
-	}],
-	pptIds : []
-})
-var movie = new Schema({
-	pptName : { type : String ,required :  true },
-	pptCreateDate : Date,
-	pptLastAlterDate : Date,
-	public : Boolean,
-	psWord : String,
-	sectionObj : [Schema.Types.Mixed]
 
-})	
 
-new Schema({
-			category : { type : Number ,required :  true },
-			categoryName: '最新动作片',
-			[{
-				moveName,
-				link,
-				picture,
-				author,
+let movieType = new Schema({
+		category : { type : Number ,required :  true },
+		categoryName: String,
+		inf: [{
+				moveName: String,
+				link: String,
+				picture: String,
+				author: String,
+				story: String,
 				hash: [{
-					episode,
-					url
+					episode: String, //剧集
+					url: String
 				}]
-			}]
-		})
-
-
+		}]
+})
+movieType = mongoose.model('movetype',movieType)
+let movie_1 = new movieType({
+	category: 1,
+	categoryName: "动作片",
+	inf: [{
+		moveName: 'tianxiawushuang',
+		link: 'baidu.com',
+		picture: 'baidu.com',
+		author: 'dhao',
+		story: 'sdfsf',
+		hash : [{
+			episode: '1sdfd',
+			url: 'dafsadf'
+		}]
+	}]
+})
+movie_1.save(function(err){
+	if(err)
+		console.log(err)
+	console.log('success11')
+})
 db.on('error',function(err , docs){
 	console.log(err);
 })
-var obj = movie
-module.exports = obj;
+

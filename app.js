@@ -130,7 +130,7 @@ class CheerioBody {
 		}
 		Promise.all(taskPromise)
 		.then((words)=>{
-			console.log(words+'下载完成');
+			console.log(words);
 			setTimeout(()=>{
 				this.creeperFn(arr,start+num,num,timer)	
 			},timer)
@@ -149,7 +149,7 @@ class CheerioBody {
 	}
 	saveMongo(data){
 		return new Promise(function(resolve, reject){
-			resolve(data.moveName);
+			resolve(data);
 		})
 	}
 	getXLUrl(XLURL){
