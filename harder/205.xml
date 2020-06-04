@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="bool" label="高血压(收缩压＞160mmHg)"/>
+<input id="num2" type="bool" label="肝功能不全（肝酶3倍、胆红素2倍以上）肾功能不全（肌酐≥200μmol/L或长期透析或肾移植）"/>
+<input id="num3" type="bool" label="卒中史"/>
+<input id="num4" type="bool" label="既往严重出血史、出血倾向等"/>
+<input id="num5" type="bool" label="INR不稳定（不达标时间超过60%）"/>
+<input id="num6" type="bool" label="年龄>65岁"/>
+<input id="num7" type="bool" label="同时应用抗血小板、NSAIDs等药物或酗酒（＞8 drinks/周）"/>
+<result id="score" type="score" label="结果"  hidden="yes">
+num1 + num2  + num3  + num4  + num5  + num6  undefined num7 
+</result>
+<interpretation for="score">
+										<text range=">=1">患者有较高风险发生严重不良转归</text>
+										<text range="<1">患者有较低风险发生严重不良转归</text>
+								</interpretation>
+</formula>

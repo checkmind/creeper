@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="心衰VALIANT风险评分(VALIANT HF Risk Score)">
+<option short="≤50岁" value="0">≤50岁</option>
+<option short="51-60岁" value="4">51-60岁</option>
+<option short="61-70岁" value="5">61-70岁</option>
+<option short="71-80岁" value="9">71-80岁</option>
+<option short=">80岁" value="10">>80岁</option>
+<option short="白种人或亚洲人" value="0">白种人或亚洲人</option>
+<option short="非裔美国人" value="6">非裔美国人</option>
+<option short="其他种族" value="4">其他种族</option>
+<option short="无" value="0">无</option>
+<option short="有" value="5">有</option>
+<option short="无" value="0">无</option>
+<option short="有" value="5">有</option>
+<option short="无" value="0">无</option>
+<option short="有" value="5">有</option>
+<option short="无新发LBBB" value="0">无新发LBBB</option>
+<option short="有新发LBBB" value="5">有新发LBBB</option>
+<option short="1或2级" value="0">1或2级</option>
+<option short="3或4级" value="3">3或4级</option>
+<option short="I" value="0">I</option>
+<option short="II" value="3">II</option>
+<option short="III" value="5">III</option>
+<option short="IV" value="9">IV</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

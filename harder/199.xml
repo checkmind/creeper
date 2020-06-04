@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="bool" label="心衰或EF≤35%(C)"/>
+<input id="num2" type="bool" label="高血压(H)"/>
+<input id="num3" type="bool" label="年龄≥75岁(A)"/>
+<input id="num4" type="bool" label="糖尿病(D)"/>
+<input id="num5" type="bool" label="卒中/TIA/系统性栓塞(S)"/>
+<result id="score" type="score" label="结果"  hidden="yes">
+num1 + num2  + num3  + num4  + num5 
+</result>
+<interpretation for="score">
+										<text range=">=1">患者有较高风险发生严重不良转归</text>
+										<text range="<1">患者有较低风险发生严重不良转归</text>
+								</interpretation>
+</formula>

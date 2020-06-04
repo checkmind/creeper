@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="Tarlov 神经功能评分标准">
+<option short="下肢完全瘫痪" value="0">下肢完全瘫痪</option>
+<option short="可觉察的下肢关节运动" value="1">可觉察的下肢关节运动</option>
+<option short="下肢可自由运动，但无法站立" value="2">下肢可自由运动，但无法站立</option>
+<option short="可站立但无法行走" value="3">可站立但无法行走</option>
+<option short="下肢运动功能完全恢复，能正常行走" value="4">下肢运动功能完全恢复，能正常行走</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

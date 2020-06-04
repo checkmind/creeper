@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="麻醉后恢复期评分">
+<option short="四肢可活动" value="2">四肢可活动</option>
+<option short="二肢可活动" value="1">二肢可活动</option>
+<option short="不可活动" value="0">不可活动</option>
+<option short="可深呼吸，可咳嗽" value="2">可深呼吸，可咳嗽</option>
+<option short="呼吸浅，但通气足够" value="1">呼吸浅，但通气足够</option>
+<option short="窒息或气道梗阻" value="0">窒息或气道梗阻</option>
+<option short="血压变化为术前20%左右，无ECG变化" value="2">血压变化为术前20%左右，无ECG变化</option>
+<option short="血压变化为术前20%-50%左右，ECG轻微变化" value="1">血压变化为术前20%-50%左右，ECG轻微变化</option>
+<option short="血压变化为术前59%左右，ECG明显变化" value="0">血压变化为术前59%左右，ECG明显变化</option>
+<option short="完全清醒" value="2">完全清醒</option>
+<option short="能唤醒" value="1">能唤醒</option>
+<option short="无反应" value="0">无反应</option>
+<option short="红润" value="2">红润</option>
+<option short="苍白或灰暗" value="1">苍白或灰暗</option>
+<option short="紫绀" value="0">紫绀</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

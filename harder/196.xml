@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="Mayo评分（溃疡性结肠炎活动性评分）">
+<option short="排便次数正常" value="0">排便次数正常</option>
+<option short="比正常排便次数增加1-2次/d" value="1">比正常排便次数增加1-2次/d</option>
+<option short="比正常排便次数增加3-4次/d" value="2">比正常排便次数增加3-4次/d</option>
+<option short="比正常排便次数增加5次/d或以上" value="3">比正常排便次数增加5次/d或以上</option>
+<option short="未见出血" value="0">未见出血</option>
+<option short="不到一半时间内出现便中混血" value="1">不到一半时间内出现便中混血</option>
+<option short="大部分时间内出现便中混血" value="2">大部分时间内出现便中混血</option>
+<option short="一直存在出血" value="3">一直存在出血</option>
+<option short="正常或无活动性病变" value="0">正常或无活动性病变</option>
+<option short="轻度病变：红斑，血管纹理减少，轻度易脆" value="1">轻度病变：红斑，血管纹理减少，轻度易脆</option>
+<option short="中度病变：明显红斑，血管纹理缺乏，易脆，糜烂；" value="2">中度病变：明显红斑，血管纹理缺乏，易脆，糜烂；</option>
+<option short="重度病变：自发性出血，溃疡形成" value="3">重度病变：自发性出血，溃疡形成</option>
+<option short="正常" value="0">正常</option>
+<option short="轻微病情" value="1">轻微病情</option>
+<option short="中度病情" value="2">中度病情</option>
+<option short="严重病情" value="3">严重病情</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

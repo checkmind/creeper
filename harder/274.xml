@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="外阴阴道假丝酵母菌病（VVC）临床表现的评分标准">
+<option short="无" value="
+                    	
+                        偶有发作
+                    ">无</option>
+<option short="无" value="
+                    	
+                        轻
+                    ">无</option>
+<option short="无" value="
+                    	
+                        ＜1/3阴道壁充血
+                    ">无</option>
+<option short="无" value="
+                    	
+                        较正常稍多
+                    ">无</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

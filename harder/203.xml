@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="急性冠脉综合征GRACE风险评分(global registry of acute coronary events risk score)">
+<option short="Ⅰ" value="0">Ⅰ</option>
+<option short="Ⅱ" value="20">Ⅱ</option>
+<option short="Ⅲ" value="39">Ⅲ</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

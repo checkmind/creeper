@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="骨髓增生异常综合征(MDS)基于WHO分类的预后评分系统(WPSS)">
+<option short="RCUD、RARS、MDS伴单纯5q-" value="0">RCUD、RARS、MDS伴单纯5q-</option>
+<option short="RCMD" value="1">RCMD</option>
+<option short="RAEB-1" value="2">RAEB-1</option>
+<option short="RAEB-2" value="3">RAEB-2</option>
+<option short="好" value="0">好</option>
+<option short="中" value="1">中</option>
+<option short="差" value="2">差</option>
+<option short="无" value="0">无</option>
+<option short="有" value="1">有</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

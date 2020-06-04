@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="Steward 苏醒评分法">
+<option short="对刺激无反应" value="0">对刺激无反应</option>
+<option short="对刺激有反应" value="1">对刺激有反应</option>
+<option short="完全苏醒" value="2">完全苏醒</option>
+<option short="呼吸道需予以支持" value="0">呼吸道需予以支持</option>
+<option short="不用支持可维持" value="1">不用支持可维持</option>
+<option short="遵医嘱咳嗽" value="2">遵医嘱咳嗽</option>
+<option short="肢体无活动" value="0">肢体无活动</option>
+<option short="肢体无意识活动" value="1">肢体无意识活动</option>
+<option short="肢体有意识活动" value="2">肢体有意识活动</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

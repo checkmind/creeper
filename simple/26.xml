@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="肺活量VC：" unitname="ml"/>
+<input id="num2" type="value" label="残气容积RV：" unitname="ml"/>
+<result id="score" type="score" label="结果">
+num1 + num2 
+</result>
+</formula>

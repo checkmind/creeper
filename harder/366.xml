@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="PRST评分系统（麻醉深度判断）">
+<option short="<对照值+15" value="0"><对照值+15</option>
+<option short="<对照值+30" value="1"><对照值+30</option>
+<option short=">对照值+30" value="2">>对照值+30</option>
+<option short="<对照值+15" value="0"><对照值+15</option>
+<option short="<对照值+30" value="1"><对照值+30</option>
+<option short=">对照值+30" value="2">>对照值+30</option>
+<option short="无" value="0">无</option>
+<option short="皮肤潮湿" value="1">皮肤潮湿</option>
+<option short="可见汗珠" value="2">可见汗珠</option>
+<option short="分开眼睑无过多泪液" value="0">分开眼睑无过多泪液</option>
+<option short="分开眼睑有过多泪液" value="1">分开眼睑有过多泪液</option>
+<option short="闭眼即有泪液流出" value="2">闭眼即有泪液流出</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

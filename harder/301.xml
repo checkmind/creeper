@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="阴道分泌物革兰染色Nugent评分标准">
+<option short="4+" value="
+                    	
+                        3+
+                    ">4+</option>
+<option short="0" value="
+                    	
+                        1+
+                    ">0</option>
+<option short="0" value="
+                    	
+                        1+或2+
+                    ">0</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="平均肺动脉压
+          PAP：" unitname="mmHg"/>
+<input id="num2" type="value" label="肺动脉楔压
+          PAWP：" unitname="mmHg"/>
+<input id="num3" type="value" label="心输出量
+          CO：" unitname="L/min"/>
+<result id="score" type="score" label="结果">
+num1 + num2  + num3 
+</result>
+</formula>

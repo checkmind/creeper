@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="简化的急性生理功能评分系统(SAPS Ⅱ, 1993)">
+<option short="125~144" value="
+                        	
+                        	≥145
+                        ">125~144</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

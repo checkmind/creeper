@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="PCI并发症风险评分(Mayo系统)">
+<option short="<40" value="0"><40</option>
+<option short="40-49" value="1">40-49</option>
+<option short="50-59" value="2">50-59</option>
+<option short="60-69" value="3">60-69</option>
+<option short="70-79" value="4">70-79</option>
+<option short="80-89" value="5">80-89</option>
+<option short="90-99" value="6">90-99</option>
+<option short="否" value="0">否</option>
+<option short="是" value="5">是</option>
+<option short="否" value="0">否</option>
+<option short="是" value="3">是</option>
+<option short="否" value="0">否</option>
+<option short="是" value="2">是</option>
+<option short="Ⅰ或Ⅱ级" value="0">Ⅰ或Ⅱ级</option>
+<option short="Ⅲ或Ⅳ级" value="2">Ⅲ或Ⅳ级</option>
+<option short="否" value="0">否</option>
+<option short="是" value="5">是</option>
+<option short="否" value="0">否</option>
+<option short="是" value="2">是</option>
+<option short="否" value="0">否</option>
+<option short="是" value="2">是</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="美国国立卫生院卒中量表(NIH Stroke Scale, NIHSS)">
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

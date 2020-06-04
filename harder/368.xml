@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label=" Wilson 苏醒评分法（困难气道的预测）">
+<option short="<90kg" value="0"><90kg</option>
+<option short="90kg-110kg" value="1">90kg-110kg</option>
+<option short="110kg" value="2">110kg</option>
+<option short="90度以上" value="0">90度以上</option>
+<option short="约90度" value="1">约90度</option>
+<option short="<90度" value="2"><90度</option>
+<option short="IG≥5cm或Slu＞0" value="0">IG≥5cm或Slu＞0</option>
+<option short="IG＜5cm和Slu＝0" value="1">IG＜5cm和Slu＝0</option>
+<option short="IG＜5cm和Slu＜0" value="2">IG＜5cm和Slu＜0</option>
+<option short="正常" value="0">正常</option>
+<option short="中度" value="1">中度</option>
+<option short="严重" value="2">严重</option>
+<option short="正常" value="0">正常</option>
+<option short="中度" value="1">中度</option>
+<option short="严重" value="2">严重</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

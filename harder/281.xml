@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="子宫内膜异位症的分期（R-AFS分期, 1985）">
+<option short="" value="
+                    	
+                        1
+                    "></option>
+<option short="" value="
+                    	
+                        2
+                    "></option>
+<option short="" value="
+                    	
+                        1
+                    "></option>
+<option short="" value="
+                    	
+                        4
+                    "></option>
+<option short="" value="
+                    	
+                        1
+                    "></option>
+<option short="" value="
+                    	
+                        4
+                    "></option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

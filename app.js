@@ -35,7 +35,7 @@ let time = null;
 // 		 	let $ = cheerio.load(data, {decodeEntities: false});
 // 		 	for(let i = 0;i<5;i++){
 // 		 		 let moveName = $('.commend li').eq(i).find('strong a').text();
-// 		 		 let link = $('.commend li').eq(i).find('a').attr('href'); 
+// 		 		 let link = $('.commend li').eq(i).find('a').attr('href');
 // 		 		 hash.push({
 // 		 		 	moveName,
 // 		 		 	link
@@ -52,7 +52,7 @@ class CheerioBody {
 	constructor (el){
 		this.typeLink = {};
 		this.$ = el;
-		this.firstLink = 'http://www.dyxia.com/'
+		this.firstLink = 'https://www.quanji789.com/'
 		this.mongoObj = [];
 		/*
 		{
@@ -74,12 +74,12 @@ class CheerioBody {
 		this.moveCategory = []; // 储存电影种类链接
 	}
 	getCategory (){ // 找到分类的链接,这一步可以瞬间完成
-		getRequest(this.firstLink).then((data)=>{  
+		getRequest(this.firstLink).then((data)=>{
 		 	let $ = cheerio.load(data, {decodeEntities: false});
 		 	let categroy,link
-		 	
-		 	for(let i = 0,len=$(".new_nav li").length;i<len;i++){ //遍历分类列表
-		 		link = $(".new_nav li").eq(i).find('a').attr('href'); 
+
+		 	for(let i = 0,len=$(".new_nav li").length;i<2;i++){ //遍历分类列表
+		 		link = $(".new_nav li").eq(i).find('a').attr('href');
 		 		categroy = $(".new_nav li").eq(i).find('a').text();
 		 		console.log(link,categroy)
 		 		this.moveCategory.push({
@@ -90,9 +90,10 @@ class CheerioBody {
 		 	console.log('获取链接列表完成');
 		 	this.getTypeLink(this.moveCategory[this.pointer].link);
 		}).catch(function(err){
+      console.log('哈哈哈哈')
 			console.log(err);
 		})
-		
+
 	}
 	getTypeLink (link){ // 某一个分类页面里的所有电影
 		if(!link){
@@ -119,20 +120,20 @@ class CheerioBody {
 	creeperFn(arr,start,num,timer){  //事件执行器，每timer秒对arr进行操作num次。
 		let taskPromise = []
 		if(arr.length<=start) { // 待处理数组处理完毕，处理下一页
-			this.pointer++; 
+			this.pointer++;
 			return;
 		}
-		if(arr.length<= start+num){  
+		if(arr.length<= start+num){
 			num  -= start + num - arr.length;
 		}
 		for(let i = start;i<start+num;i++){
-			taskPromise.push(this.callRequest(arr[i])) 
+			taskPromise.push(this.callRequest(arr[i]))
 		}
 		Promise.all(taskPromise)
 		.then((words)=>{
 			console.log(words);
 			setTimeout(()=>{
-				this.creeperFn(arr,start+num,num,timer)	
+				this.creeperFn(arr,start+num,num,timer)
 			},timer)
 		})
 		.catch((res)=>{  // 如果出错了，可能由于当时的网络缓慢或者坏链，则放慢速度
@@ -150,7 +151,6 @@ class CheerioBody {
 	saveMongo(data){
 		return new Promise(function(resolve, reject){
 			resolve(data);
-			
 		})
 	}
 	getXLUrl(XLURL){
@@ -160,7 +160,7 @@ class CheerioBody {
 				 	$(".downurl").find('li').each(function(){
 				 		let episode = $(this).text(); //剧集
 				 		let url = $(this).find("a").attr('href');  // 迅雷链接
-				 		
+
 				 		hash.push({
 				 			episode,
 				 			url
@@ -178,12 +178,12 @@ let cheerioEx = new CheerioBody();
 cheerioEx.getCategory();
 
 app.get('/recommend',function(req,res){
-	
+
 	getRequest('http://www.dyxia.com/').then(function(data){  //抓取主页推荐
 		 	let $ = cheerio.load(data, {decodeEntities: false});
 		 	for(let i = 0;i<5;i++){
 		 		 let moveName = $('.commend li').eq(i).find('strong a').text();
-		 		 let link = $('.commend li').eq(i).find('a').attr('href'); 
+		 		 let link = $('.commend li').eq(i).find('a').attr('href');
 		 		 hash.push({
 		 		 	moveName,
 		 		 	link
@@ -216,13 +216,13 @@ app.get('/getXLUrl',function(req,res){
 function getXLUrl(XLURL){
 	return new Promise(function(resolve,reject){
 		//app.get('/downLoadUrl',function(req,res){  // 抓取迅雷链接
-			 let hash = [];	
+			 let hash = [];
 			 getRequest(XLURL).then(function(data){
 			 	let $ = cheerio.load(data, {decodeEntities: false});
 			 	$(".downurl").find('li').each(function(){
 			 		let episode = $(this).text(); //剧集
 			 		let url = $(this).find("a").attr('href');  // 迅雷链接
-			 		
+
 			 		hash.push({
 			 			episode,
 			 			url
@@ -238,7 +238,7 @@ function getXLUrl(XLURL){
 			 		picture
 			 	});
 			 })
-		})	
+		})
 	//})
 }
 // 搜索接口

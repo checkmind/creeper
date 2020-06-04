@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="肝素诱导的血小板减少评分系统(HIT 4T's score)">
+<option short="" value="
+                        	
+                        	下降＞50%(绝对值下降≥20×10^9/L)
+                        "></option>
+<option short="" value="
+                        	
+                        	使用肝素5-10天或≤1天（过去30天内曾经使用肝素）
+                        "></option>
+<option short="" value="
+                        	
+                        	新发血栓、皮肤坏疽、静注后急性全身反应
+                        "></option>
+<option short="" value="
+                        	
+                        	无证据
+                        "></option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

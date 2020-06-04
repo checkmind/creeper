@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="朗格汉斯细胞组织细胞增生症(LCH)临床分型(级)(Lavin-Osband分级法)">
+<option short=">2岁" value="0分">>2岁</option>
+<option short="<2岁" value="1分"><2岁</option>
+<option short="<4个" value="0分"><4个</option>
+<option short="≥4个" value="1分">≥4个</option>
+<option short="无" value="0分">无</option>
+<option short="有" value="1分">有</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

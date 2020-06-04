@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="type" type="select" label="月龄/年龄">
+  <option value="1" short="月龄">月龄</option>
+  <option value="2" short="年龄">年龄</option>
+</input>
+<input show-if="type == 1" id="num1" type="value" label="月龄" unitname="月" min="1" max="12"/>
+<input show-if="type == 2" id="num2" type="value" label="年龄" unitname="岁" min="0" max="12"/>
+<result id="score1" type="score" label="结果" >
+if( type == 1) {
+ if(num1 <= 6) {
+  return 3 + num1 * 0.7
+ } else {
+  return (num1 == 12  ? 10 : 6 + num1 * 0.25)
+ }
+} else {
+ if(num2 < 2) {
+   return (num2 == 1  ? 10 : 6 + num2 * 12 * 0.25 )
+ } else {
+  return num2 * 2 + 8
+ }
+}
+</result>
+<result id="score2" type="score" label="结果" >
+if( type == 1) {
+ if(num1 <= 6) {
+  return 3 + num1 * 0.7
+ } else {
+  return (num1 == 12  ? 10 : 6 + num1 * 0.25)
+ }
+} else {
+ if(num2 < 2) {
+   return (num2 == 1  ? 10 : 6 + num2 * 12 * 0.25 )
+ } else {
+  return num2 * 2 + 8
+ }
+}
+</result>
+</formula>
+<script>
+
+</script>

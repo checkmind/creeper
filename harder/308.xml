@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="bool" label=""/>
+<input id="num2" type="bool" label="今天是几号?"/>
+<input id="num3" type="bool" label="现在是几月份?"/>
+<input id="num4" type="bool" label="现在是什么季节?"/>
+<input id="num5" type="bool" label="今年的年份?"/>
+<input id="num6" type="bool" label=""/>
+<input id="num7" type="bool" label="现在我们在什么地方(区、县)?"/>
+<input id="num8" type="bool" label="现在我们在什么街道(乡、村)?"/>
+<input id="num9" type="bool" label="这里是什么地方(地址名称)?"/>
+<input id="num10" type="bool" label="现在我们在第几层楼?"/>
+<input id="num11" type="bool" label=""/>
+<input id="num12" type="bool" label="复述：国旗"/>
+<input id="num13" type="bool" label="复述：树木"/>
+<input id="num14" type="bool" label=""/>
+<input id="num15" type="bool" label="93-7=86"/>
+<input id="num16" type="bool" label="86-7=79"/>
+<input id="num17" type="bool" label="79-7=72"/>
+<input id="num18" type="bool" label="72-7=65"/>
+<input id="num19" type="bool" label=""/>
+<input id="num20" type="bool" label="回忆：国旗"/>
+<input id="num21" type="bool" label="回忆：树木"/>
+<input id="num22" type="bool" label=""/>
+<input id="num23" type="bool" label=""/>
+<input id="num24" type="bool" label=""/>
+<input id="num25" type="bool" label=""/>
+<input id="num26" type="bool" label=""/>
+<input id="num27" type="bool" label="按口头指令动作：将纸对折"/>
+<input id="num28" type="bool" label="按口头指令动作：将纸放在自己大腿上"/>
+<input id="num29" type="bool" label=""/>
+<input id="num30" type="bool" label=""/>
+<result id="score" type="score" label="结果"  hidden="yes">
+num1 + num2  + num3  + num4  + num5  + num6  undefined num7  undefined num8  undefined num9  undefined num10  undefined num11  undefined num12  undefined num13  undefined num14  undefined num15  undefined num16  undefined num17  undefined num18  undefined num19  undefined num20  undefined num21  undefined num22  undefined num23  undefined num24  undefined num25  undefined num26  undefined num27  undefined num28  undefined num29  undefined num30 
+</result>
+<interpretation for="score">
+										<text range=">=1">患者有较高风险发生严重不良转归</text>
+										<text range="<1">患者有较低风险发生严重不良转归</text>
+								</interpretation>
+</formula>

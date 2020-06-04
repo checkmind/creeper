@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="滋养细胞肿瘤改良预后评分系统（FIGO, 2000）">
+<option short="＜40" value="
+                    	
+                        ≥40
+                    ">＜40</option>
+<option short="葡萄胎" value="
+                    	
+                        流产
+                    ">葡萄胎</option>
+<option short="＜4" value="
+                    	
+                        4~＜7
+                    ">＜4</option>
+<option short="＜103" value="
+                    	
+                        103~＜104
+                    ">＜103</option>
+<option short="" value="
+                    	
+                        3~＜5cm
+                    "></option>
+<option short="肺" value="
+                    	
+                        脾、肾
+                    ">肺</option>
+<option short="" value="
+                    	
+                        1~4
+                    "></option>
+<option short="" value="
+                    "></option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

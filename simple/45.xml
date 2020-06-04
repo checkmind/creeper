@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="gender" type="gender" />
+<input id="num2" type="value" label="血肌酐浓度Scr："  unitname='mg/dLμmol/L'/>
+<input id="num3" type="value" label="年龄："  unitname='岁'/>
+<input id="num4" type="value" label="血清尿素氮："  unitname='mg/dLmmol/L'/>
+<input id="num5" type="value" label="血清白蛋白："  unitname='g/dLg/L'/>
+<result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

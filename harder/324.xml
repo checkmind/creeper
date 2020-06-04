@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="漏斗胸凹陷部的纵径a：" unitname="cm"/>
+<input id="num2" type="value" label="漏斗胸凹陷部的横径b：" unitname="cm"/>
+<input id="num3" type="value" label="漏斗胸凹陷部的深度c：" unitname="cm"/>
+<input id="num4" type="value" label="胸骨长度A：" unitname="cm"/>
+<input id="num5" type="value" label="胸廓的横径B：" unitname="cm"/>
+<input id="num6" type="value" label="胸骨角至椎体的最短距离C：" unitname="cm"/>
+<result id="score" type="score" label="结果">
+num1 + num2  + num3  + num4  + num5  + num6 
+</result>
+</formula>

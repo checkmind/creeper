@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="Essen卒中风险评分量表(Essen Stroke Risk Score, ESRS)">
+<option short="<65岁" value="0"><65岁</option>
+<option short="65~75岁" value="1">65~75岁</option>
+<option short=">75岁" value="2">>75岁</option>
+<option short="高血压" value="1">高血压</option>
+<option short="糖尿病" value="1">糖尿病</option>
+<option short="既往心肌梗死" value="1">既往心肌梗死</option>
+<option short="其他心血管疾病（除外心房颤动和心肌梗死）" value="1">其他心血管疾病（除外心房颤动和心肌梗死）</option>
+<option short="外周动脉疾病" value="1">外周动脉疾病</option>
+<option short="吸烟" value="1">吸烟</option>
+<option short="既往缺血性脑卒中/TIA史" value="1">既往缺血性脑卒中/TIA史</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="gender" type="gender" />
+<input id="num1" type="value" label="血清胆红素："  unitname='mg/dlμmol/L'/>
+<input id="num2" type="value" label="白蛋白："  unitname='g/dlg/L'/>
+<input id="num3" type="value" label="国际标准化比值："  unitname=''/>
+<input id="num4" type="value" label="年龄："  unitname=''/>
+<input id="num5" type="value" label="生长停滞："  unitname=''/>
+<result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

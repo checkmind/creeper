@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="透析间期尿量
+          IDUV：" unitname="ml"/>
+<input id="num2" type="value" label="尿液尿素浓度 
+          UUC：" unitname="mg/dL"/>
+<input id="num3" type="value" label="透析间期 
+          ID Period：" unitname="min"/>
+<input id="num4" type="value" label="平均尿素氮含量 
+          Mean BUN：" unitname="mg/dL"/>
+<result id="score" type="score" label="结果">
+num1 + num2  + num3  + num4 
+</result>
+</formula>

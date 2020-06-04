@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="心输出量：" unitname="ml/分"/>
+<input id="num2" type="value" label="心率：" unitname="次/分"/>
+<result id="score" type="score" label="结果">
+num1 + num2 
+</result>
+</formula>

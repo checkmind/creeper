@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="请选择体重范围：" unitname=""/>
+<input id="num2" type="value" label="体重：" unitname="kg"/>
+<result id="score" type="score" label="结果">
+num1 + num2 
+</result>
+</formula>

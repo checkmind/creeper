@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="gender" type="gender" />
+<input id="num1" type="value" label="血清钙："  unitname='mmol/Lmg/dL'/>
+<input id="num2" type="value" label="血白蛋白："  unitname='g/Lg/dL'/>
+<result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

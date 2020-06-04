@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="EPDS（爱丁堡产后抑郁量表）">
+<option short="根本不" value="3分">根本不</option>
+<option short="现在肯定不多" value="2分">现在肯定不多</option>
+<option short="现在不是那样多" value="1分">现在不是那样多</option>
+<option short="如我总能做到那样多" value="0分">如我总能做到那样多</option>
+<option short="全然难得有 " value="3分">全然难得有 </option>
+<option short="肯定较原来做得少" value="2分">肯定较原来做得少</option>
+<option short="较我原来做得少" value="1分">较我原来做得少</option>
+<option short="如我曾做到那样多" value="0分">如我曾做到那样多</option>
+<option short="是，大多时间如此" value="3分">是，大多时间如此</option>
+<option short="是，有时如此" value="2分">是，有时如此</option>
+<option short="并不经常" value="1分">并不经常</option>
+<option short="不，永远不" value="0分">不，永远不</option>
+<option short="是，非常多" value="3分">是，非常多</option>
+<option short="是，有时" value="2分">是，有时</option>
+<option short="极难得" value="1分">极难得</option>
+<option short="不，总不" value="0分">不，总不</option>
+<option short="是，相当多" value="3分">是，相当多</option>
+<option short="是，有时" value="2分">是，有时</option>
+<option short="不，不多" value="1分">不，不多</option>
+<option short="不，总不" value="0分">不，总不</option>
+<option short="是，在大多数情况下我全然不能应付" value="3分">是，在大多数情况下我全然不能应付</option>
+<option short="是，有时我不能像平时那样应付" value="2分">是，有时我不能像平时那样应付</option>
+<option short="不，大多数时间我应付得相当好" value="1分">不，大多数时间我应付得相当好</option>
+<option short="我应付与过去一样好" value="0分">我应付与过去一样好</option>
+<option short="是，大多数时间如此" value="3分">是，大多数时间如此</option>
+<option short="是，有时" value="2分">是，有时</option>
+<option short="并不经常" value="1分">并不经常</option>
+<option short="不，全然不" value="0分">不，全然不</option>
+<option short="是，大多数时间如此" value="3分">是，大多数时间如此</option>
+<option short="是，相当经常" value="2分">是，相当经常</option>
+<option short="并不经常" value="1分">并不经常</option>
+<option short="不，根本不" value="0分">不，根本不</option>
+<option short="是，大多数时间" value="3分">是，大多数时间</option>
+<option short="是，相当常见" value="2分">是，相当常见</option>
+<option short="偶然有" value="1分">偶然有</option>
+<option short="不，绝不" value="0分">不，绝不</option>
+<option short="是，相当经常" value="3分">是，相当经常</option>
+<option short="有时" value="2分">有时</option>
+<option short="极难得" value="1分">极难得</option>
+<option short="永远不" value="0分">永远不</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

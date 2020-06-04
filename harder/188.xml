@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="临床肺部感染CPIS评分">
+<option short="" value="36.5-38.4"></option>
+<option short="" value="38.5-38.9"></option>
+<option short="" value="≥39或≤36"></option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

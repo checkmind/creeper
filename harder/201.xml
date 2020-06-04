@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="bool" label="高龄（≥70岁）"/>
+<input id="num2" type="bool" label="女性"/>
+<input id="num3" type="bool" label="非近期出血事件"/>
+<input id="num4" type="bool" label="近期出血事件"/>
+<input id="num5" type="bool" label="酒精/药物滥用"/>
+<input id="num6" type="bool" label="糖尿病"/>
+<input id="num7" type="bool" label="贫血(Hct＜30%)"/>
+<input id="num8" type="bool" label="抗血小板药物治疗"/>
+<result id="score" type="score" label="结果"  hidden="yes">
+num1 + num2  + num3  + num4  + num5  + num6  undefined num7  undefined num8 
+</result>
+<interpretation for="score">
+										<text range=">=1">患者有较高风险发生严重不良转归</text>
+										<text range="<1">患者有较低风险发生严重不良转归</text>
+								</interpretation>
+</formula>

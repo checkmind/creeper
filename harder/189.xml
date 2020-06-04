@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="慢性阻塞性肺病(COPD)的BODE指数">
+<option short="≥65" value="50-64">≥65</option>
+<option short="≥350" value="250-349">≥350</option>
+<option short="0-1" value="2">0-1</option>
+<option short=">21" value="≤21">>21</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

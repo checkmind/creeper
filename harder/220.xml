@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="序贯性器官功能衰竭评分(SOFA脓毒症评分)">
+<option short="≥70" value="＜70（未使用血管活性药）">≥70</option>
+<option short="≥400" value="300~399">≥400</option>
+<option short="＜110" value="110~170">＜110</option>
+<option short="＜20" value="20~32">＜20</option>
+<option short="＞149" value="100~149">＞149</option>
+<option short="15" value="13~14">15</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

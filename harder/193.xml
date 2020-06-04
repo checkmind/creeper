@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="颅内血管动静脉畸形(AVM) Spetzler-Martin分级">
+<option short="<3cm" value="1"><3cm</option>
+<option short="3-6cm" value="2">3-6cm</option>
+<option short=">6cm" value="3">>6cm</option>
+<option short="非功能区" value="0">非功能区</option>
+<option short="功能区" value="1">功能区</option>
+<option short="表浅静脉引流" value="0">表浅静脉引流</option>
+<option short="深部静脉引流" value="1">深部静脉引流</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="bool" label=""/>
+<input id="num2" type="bool" label=""/>
+<input id="num3" type="bool" label=""/>
+<input id="num4" type="bool" label=""/>
+<input id="num5" type="bool" label=""/>
+<input id="num6" type="bool" label=""/>
+<input id="num7" type="bool" label=""/>
+<input id="num8" type="bool" label=""/>
+<input id="num9" type="bool" label=""/>
+<input id="num10" type="bool" label=""/>
+<input id="num11" type="bool" label=""/>
+<input id="num12" type="bool" label=""/>
+<input id="num13" type="bool" label=""/>
+<input id="num14" type="bool" label=""/>
+<input id="num15" type="bool" label=""/>
+<input id="num16" type="bool" label=""/>
+<input id="num17" type="bool" label=""/>
+<input id="num18" type="bool" label=""/>
+<input id="num19" type="bool" label=""/>
+<input id="num20" type="bool" label=""/>
+<input id="num21" type="bool" label=""/>
+<input id="num22" type="bool" label=""/>
+<input id="num23" type="bool" label=""/>
+<input id="num24" type="bool" label=""/>
+<result id="score" type="score" label="结果"  hidden="yes">
+num1 + num2  + num3  + num4  + num5  + num6  undefined num7  undefined num8  undefined num9  undefined num10  undefined num11  undefined num12  undefined num13  undefined num14  undefined num15  undefined num16  undefined num17  undefined num18  undefined num19  undefined num20  undefined num21  undefined num22  undefined num23  undefined num24 
+</result>
+<interpretation for="score">
+										<text range=">=1">患者有较高风险发生严重不良转归</text>
+										<text range="<1">患者有较低风险发生严重不良转归</text>
+								</interpretation>
+</formula>

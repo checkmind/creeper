@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="检测到的脑脊液WBC计数：" unitname="cells/μL"/>
+<input id="num2" type="value" label="血WBC计数：" unitname="×109/L"/>
+<input id="num3" type="value" label="脑脊液RBC
+          计数：" unitname="cells/μL"/>
+<input id="num4" type="value" label="血RBC计数：" unitname="×1012/L"/>
+<result id="score" type="score" label="结果">
+num1 + num2  + num3  + num4 
+</result>
+</formula>

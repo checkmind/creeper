@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="简易胎龄评估量表">
+<option short="无" value="
+                        	
+                        	前半部红痕不明显
+                        ">无</option>
+<option short="难认，无乳晕 " value="
+                        	
+                        	明显可见，乳晕淡、平，直径<0.75cm 
+                        ">难认，无乳晕 </option>
+<option short="" value="
+                        	
+                        	未达指尖
+                        "></option>
+<option short="很薄，胶胨状 " value="
+                        	
+                        	薄而光滑 
+                        ">很薄，胶胨状 </option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

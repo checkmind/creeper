@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="bool" label="C：充血性心力衰竭病史  "/>
+<input id="num2" type="bool" label="H：红细胞压积<30%  "/>
+<input id="num3" type="bool" label="E：心电图异常(新出现的改变或非窦性心律)   "/>
+<input id="num4" type="bool" label="S：以气短为主诉  "/>
+<input id="num5" type="bool" label="S：初诊时收缩压<90mmHg  "/>
+<result id="score" type="score" label="结果"  hidden="yes">
+num1 + num2  + num3  + num4  + num5 
+</result>
+<interpretation for="score">
+										<text range=">=1">患者有较高风险发生严重不良转归</text>
+										<text range="<1">患者有较低风险发生严重不良转归</text>
+								</interpretation>
+</formula>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="IIEF-5（国际勃起功能评分5项）">
+<option short="无" value="
+                        	
+                        	很低
+                        ">无</option>
+<option short="无性活动" value="
+                        	
+                        	几乎没有或完全没有
+                        ">无性活动</option>
+<option short="没有尝试性交" value="
+                        	
+                        	几乎没有或完全没有
+                        ">没有尝试性交</option>
+<option short="没有尝试性交" value="
+                        	
+                        	非常困难
+                        ">没有尝试性交</option>
+<option short="没有尝试性交" value="
+                        	
+                        	几乎没有或完全没有
+                        ">没有尝试性交</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

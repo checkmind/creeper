@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="肺泡-动脉氧压差
+          P(A-a)O2：" unitname="mmHg"/>
+<input id="num2" type="value" label="动脉血氧分压
+          PaO2：" unitname="mmHg"/>
+<result id="score" type="score" label="结果">
+num1 + num2 
+</result>
+</formula>

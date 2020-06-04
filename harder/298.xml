@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="胎儿生物物理监测Manning评分及处理原则">
+<option short="≥2次胎动，FHR加速，振幅≥15bpm，持续≥15秒" value="
+                    	
+                    	＜2次胎动，FHR加速，振幅＜15bpm，持续＜15秒
+                    ">≥2次胎动，FHR加速，振幅≥15bpm，持续≥15秒</option>
+<option short="≥1次，持续≥30秒" value="
+                    	
+                    	无或持续＜30秒
+                    ">≥1次，持续≥30秒</option>
+<option short="≥3次躯干和肢体活动（连续出现计1次）" value="
+                    	
+                    	≤2次躯干和肢体活动
+                    ">≥3次躯干和肢体活动（连续出现计1次）</option>
+<option short="≥1次躯干伸展后恢复到屈曲，手指摊开合拢" value="
+                    	
+                    	无活动，肢体完全伸展，伸展缓慢，部分恢复到屈曲
+                    ">≥1次躯干伸展后恢复到屈曲，手指摊开合拢</option>
+<option short="≥1个羊水暗区，最大羊水池垂直直径≥2cm" value="
+                    	
+                    	无或最大羊水池垂直直径＜2cm
+                    ">≥1个羊水暗区，最大羊水池垂直直径≥2cm</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

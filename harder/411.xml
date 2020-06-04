@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="Fugl-Meyer平衡功能评定">
+<option short="不能保持坐位" value="0分">不能保持坐位</option>
+<option short="能坐但少于5分钟" value="1分">能坐但少于5分钟</option>
+<option short="能坚持坐位5分钟以上" value="2分">能坚持坐位5分钟以上</option>
+<option short="肩部无外展，肘关节无伸展" value="0分">肩部无外展，肘关节无伸展</option>
+<option short="反应减弱 " value="1分">反应减弱 </option>
+<option short="正常反应" value="2分">正常反应</option>
+<option short="肩部无外展，肘关节无伸展" value="0分">肩部无外展，肘关节无伸展</option>
+<option short="反应减弱" value="1分">反应减弱</option>
+<option short="正常反应" value="2分">正常反应</option>
+<option short="不能站立" value="0分">不能站立</option>
+<option short="他人完全支撑时可站立" value="1分">他人完全支撑时可站立</option>
+<option short="一个人稍给支撑时能站立1分钟" value="2分">一个人稍给支撑时能站立1分钟</option>
+<option short="不能站立" value="0分">不能站立</option>
+<option short="不能站立1分钟或身体摇晃" value="1分">不能站立1分钟或身体摇晃</option>
+<option short="能平衡站立1分钟以上" value="2分">能平衡站立1分钟以上</option>
+<option short="不能维持1-2秒" value="0分">不能维持1-2秒</option>
+<option short="平衡站稳达4-9秒" value="1分">平衡站稳达4-9秒</option>
+<option short="平衡站立超过10秒" value="2分">平衡站立超过10秒</option>
+<option short="不能维持1-2秒" value="1分">不能维持1-2秒</option>
+<option short="平衡站稳达4-9秒" value="1分">平衡站稳达4-9秒</option>
+<option short="平衡站立超过10秒" value="2分">平衡站立超过10秒</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

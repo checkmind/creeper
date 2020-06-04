@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="bool" label="转移性右下腹痛"/>
+<input id="num2" type="bool" label="纳差"/>
+<input id="num3" type="bool" label="恶心呕吐"/>
+<input id="num4" type="bool" label="右下腹压痛"/>
+<input id="num5" type="bool" label="反跳痛"/>
+<input id="num6" type="bool" label="发热≥37.3℃"/>
+<input id="num7" type="bool" label="WBC↑（>10×10^9/L）"/>
+<input id="num8" type="bool" label="NEU%↑"/>
+<result id="score" type="score" label="结果"  hidden="yes">
+num1 + num2  + num3  + num4  + num5  + num6  undefined num7  undefined num8 
+</result>
+<interpretation for="score">
+										<text range=">=1">患者有较高风险发生严重不良转归</text>
+										<text range="<1">患者有较低风险发生严重不良转归</text>
+								</interpretation>
+</formula>

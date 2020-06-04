@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="吸气峰压
+          Ppeak：" unitname="cmH2O"/>
+<input id="num2" type="value" label="吸气平台压
+          Pplat：" unitname="cmH2O"/>
+<input id="num3" type="value" label="吸气流量：" unitname="L/s"/>
+<result id="score" type="score" label="结果">
+num1 + num2  + num3 
+</result>
+</formula>

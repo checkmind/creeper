@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="bool" label="1.夜间阵发性呼吸困难和/或睡眠时憋醒"/>
+<input id="num2" type="bool" label="2.颈静脉怒张或搏动增强"/>
+<input id="num3" type="bool" label="3.肺部啰音和/或呼吸音减弱，尤其是双肺底"/>
+<input id="num4" type="bool" label="4.影像学显示心脏扩大"/>
+<input id="num5" type="bool" label="5.急性肺水肿"/>
+<input id="num6" type="bool" label="6.第三心音奔马律"/>
+<input id="num7" type="bool" label="7.颈静脉压升高＞16cmH2O"/>
+<input id="num8" type="bool" label="8.肝颈静脉回流征阳性"/>
+<input id="num9" type="bool" label="9.治疗5天内体重下降>4.5kg"/>
+<input id="num10" type="bool" label="1.双踝部水肿"/>
+<input id="num11" type="bool" label="2.夜间咳嗽，无上感依据"/>
+<input id="num12" type="bool" label="3.劳力性呼吸困难"/>
+<input id="num13" type="bool" label="4.淤血性肝肿大"/>
+<input id="num14" type="bool" label="5.胸腔积液"/>
+<input id="num15" type="bool" label="6.肺活量减少了记录到的最大值的1/3"/>
+<input id="num16" type="bool" label="7.心动过速（心率≥120bpm）"/>
+<result id="score" type="score" label="结果"  hidden="yes">
+num1 + num2  + num3  + num4  + num5  + num6  undefined num7  undefined num8  undefined num9  undefined num10  undefined num11  undefined num12  undefined num13  undefined num14  undefined num15  undefined num16 
+</result>
+<interpretation for="score">
+										<text range=">=1">患者有较高风险发生严重不良转归</text>
+										<text range="<1">患者有较低风险发生严重不良转归</text>
+								</interpretation>
+</formula>

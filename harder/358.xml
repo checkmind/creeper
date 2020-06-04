@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="改良 Kupperman 指数（妇女更年期症状评分标准）">
+<option short="" value="
+                        	
+                        	无
+                        "></option>
+<option short="" value="
+                        	
+                        	无
+                        "></option>
+<option short="" value="
+                        	
+                        	无
+                        "></option>
+<option short="" value="
+                        	
+                        	无
+                        "></option>
+<option short="" value="
+                        	
+                        	无
+                        "></option>
+<option short="" value="
+                        	
+                        	无
+                        "></option>
+<option short="" value="
+                        	
+                        	无
+                        "></option>
+<option short="" value="
+                        	
+                        	无
+                        "></option>
+<option short="" value="
+                        	
+                        	无
+                        "></option>
+<option short="" value="
+                        	
+                        	无
+                        "></option>
+<option short="" value="
+                        无"></option>
+<option short="" value="
+                      正常"></option>
+<option short="" value="
+                        	
+                        	无
+                        "></option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

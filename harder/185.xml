@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="bool" label="1.发热≥39.0℃，并持续≥1周"/>
+<input id="num2" type="bool" label="2.关节痛持续≥2周"/>
+<input id="num3" type="bool" label="3.典型皮疹"/>
+<input id="num4" type="bool" label="4.白细胞增高≥10×10^9/L，中性粒细胞≥80%"/>
+<input id="num5" type="bool" label="1.咽痛"/>
+<input id="num6" type="bool" label="2.肝大或脾大"/>
+<input id="num7" type="bool" label="3.淋巴结肿大"/>
+<input id="num8" type="bool" label="4.肝功能异常（AST、ALT和LDH升高）"/>
+<input id="num9" type="bool" label="5.类风湿因子RF和抗核抗体ANA阴性"/>
+<result id="score" type="score" label="结果"  hidden="yes">
+num1 + num2  + num3  + num4  + num5  + num6  undefined num7  undefined num8  undefined num9 
+</result>
+<interpretation for="score">
+										<text range=">=1">患者有较高风险发生严重不良转归</text>
+										<text range="<1">患者有较低风险发生严重不良转归</text>
+								</interpretation>
+</formula>

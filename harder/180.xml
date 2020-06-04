@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="bool" label="年龄>70岁"/>
+<input id="num2" type="bool" label="6个月内心肌梗塞病史"/>
+<input id="num3" type="bool" label="第三心音奔马率或颈静脉怒张等心衰征象"/>
+<input id="num4" type="bool" label="显著的主动脉瓣狭窄（Important VAS）"/>
+<input id="num5" type="bool" label="窦性或房性期前收缩以外的心律失常（手术前最后一次ECG）"/>
+<input id="num6" type="bool" label=" 室性期前收缩≥5次/分（手术前最后一次ECG）"/>
+<input id="num7" type="bool" label="PaO2＜60mmHg   or   PCO2＞50mmHg；    K2＜3.0mmol/L；    HCO3-＜20mmol/L；    BUN＞50mg/dl(17.85mmol/L)或Cr＞3.0mg/dl(265μmol/L)；    AST升高；    慢性肝病或非心脏原因卧床"/>
+<input id="num8" type="bool" label="腹腔，胸腔内，或主动脉手术"/>
+<input id="num9" type="bool" label="急诊手术"/>
+<result id="score" type="score" label="结果"  hidden="yes">
+num1 + num2  + num3  + num4  + num5  + num6  undefined num7  undefined num8  undefined num9 
+</result>
+<interpretation for="score">
+										<text range=">=1">患者有较高风险发生严重不良转归</text>
+										<text range="<1">患者有较低风险发生严重不良转归</text>
+								</interpretation>
+</formula>

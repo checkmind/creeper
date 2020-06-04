@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="骨髓增生异常综合征(MDS)国际预后评分系统(IPSS)">
+<option short="<5%" value="0"><5%</option>
+<option short="5%-10%" value="0.5">5%-10%</option>
+<option short="11%-20%" value="1.5">11%-20%</option>
+<option short="21%-30%" value="2.0">21%-30%</option>
+<option short="好" value="0">好</option>
+<option short="中" value="0.5">中</option>
+<option short="差" value="1.0">差</option>
+<option short="无或一系减少" value="0">无或一系减少</option>
+<option short="两系或三系减少" value="0.5">两系或三系减少</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

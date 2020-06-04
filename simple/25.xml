@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="潮气容积
+          VT：" unitname="ml"/>
+<input id="num2" type="value" label="补吸气容积
+          IRV：" unitname="ml"/>
+<input id="num3" type="value" label="补呼气容积
+          ERV：" unitname="ml"/>
+<result id="score" type="score" label="结果">
+num1 + num2  + num3 
+</result>
+</formula>

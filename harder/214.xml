@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="霍奇金淋巴瘤(HL)国际预后评分(Hasenclever IPS Score)">
+<option short="≤45岁" value="0">≤45岁</option>
+<option short="≥45岁" value="1">≥45岁</option>
+<option short="女性" value="0">女性</option>
+<option short="男性" value="1">男性</option>
+<option short="≥40g/L" value="0">≥40g/L</option>
+<option short="<40g/L" value="1"><40g/L</option>
+<option short="≥105g/L" value="0">≥105g/L</option>
+<option short="<105g/L" value="1"><105g/L</option>
+<option short="Ⅲ期" value="0">Ⅲ期</option>
+<option short="Ⅳ期" value="1">Ⅳ期</option>
+<option short="<15×10^9/L" value="0"><15×10^9/L</option>
+<option short="≥15×10^9/L" value="1">≥15×10^9/L</option>
+<option short="≥0.6×10^9/L（白细胞计数的8%）" value="0">≥0.6×10^9/L（白细胞计数的8%）</option>
+<option short="<0.6×10^9/L（白细胞计数的8%）" value="1"><0.6×10^9/L（白细胞计数的8%）</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

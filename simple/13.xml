@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="平均动脉压：" unitname="mmHg"/>
+<input id="num2" type="value" label="中心静脉压：" unitname="mmHg"/>
+<input id="num3" type="value" label="心输出量：" unitname="L/min"/>
+<result id="score" type="score" label="结果">
+num1 + num2  + num3 
+</result>
+</formula>

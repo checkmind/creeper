@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="CRUSADE出血风险评分量表(ESC, 2011)">
+<option short=">39.9" value="0">>39.9</option>
+<option short="37-39.9" value="2">37-39.9</option>
+<option short="34-36.9" value="3">34-36.9</option>
+<option short="31-33.9" value="7">31-33.9</option>
+<option short="<31" value="9"><31</option>
+<option short=">120" value="0">>120</option>
+<option short="91-120" value="7">91-120</option>
+<option short="61-90" value="17">61-90</option>
+<option short="31-60" value="28">31-60</option>
+<option short="16-30" value="35">16-30</option>
+<option short="<16" value="39"><16</option>
+<option short="<71" value="0"><71</option>
+<option short="71-80" value="1">71-80</option>
+<option short="81-90" value="3">81-90</option>
+<option short="91-100" value="6">91-100</option>
+<option short="101-110" value="8">101-110</option>
+<option short="111-120" value="10">111-120</option>
+<option short=">120" value="11">>120</option>
+<option short="<91" value="10"><91</option>
+<option short="91-100" value="8">91-100</option>
+<option short="101-120" value="5">101-120</option>
+<option short="121-180" value="1">121-180</option>
+<option short="181-200" value="3">181-200</option>
+<option short=">200" value="5">>200</option>
+<option short="男性" value="0">男性</option>
+<option short="女性" value="8">女性</option>
+<option short="否" value="0">否</option>
+<option short="是" value="7">是</option>
+<option short="否" value="0">否</option>
+<option short="是" value="6">是</option>
+<option short="否" value="0">否</option>
+<option short="是" value="6">是</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

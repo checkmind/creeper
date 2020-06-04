@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="吸入氧浓度FiO2：" unitname="%"/>
+<input id="num2" type="value" label="PaCO2：" unitname="mmHg"/>
+<input id="num3" type="value" label="PaO2：" unitname="mmHg"/>
+<result id="score" type="score" label="结果">
+num1 + num2  + num3 
+</result>
+</formula>

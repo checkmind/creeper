@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="gender" type="gender" />
+<input id="num1" type="value" label="成人剂量："  unitname='g'/>
+<input id="num2" type="value" label="月龄："  unitname='月'/>
+<result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>

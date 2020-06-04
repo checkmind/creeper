@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="value" label="心输出量CO：" unitname="L/min"/>
+<input id="num2" type="value" label="血红蛋白Hb：" unitname="g/L"/>
+<input id="num3" type="value" label="动脉血氧饱和度SaO2：" unitname="%"/>
+<result id="score" type="score" label="结果">
+num1 + num2  + num3 
+</result>
+</formula>

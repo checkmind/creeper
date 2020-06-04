@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="num1" type="bool" label="既往动脉粥样硬化血管事件(AVE)"/>
+<input id="num2" type="bool" label="左房大小>26mm/m2"/>
+<input id="num3" type="bool" label="LVEF≤35%"/>
+<input id="num4" type="bool" label="房颤"/>
+<input id="num5" type="bool" label="左束支阻滞或心室内传导阻滞"/>
+<input id="num6" type="bool" label="非持续性室速和频发室早"/>
+<input id="num7" type="bool" label="eGFR<60ml/min/1.73m2"/>
+<input id="num8" type="bool" label="血清钠≤138mmol/L"/>
+<input id="num9" type="bool" label="NT-proBNP>1.000ng/L"/>
+<input id="num10" type="bool" label="肌钙蛋白阳性"/>
+<result id="score" type="score" label="结果"  hidden="yes">
+num1 + num2  + num3  + num4  + num5  + num6  undefined num7  undefined num8  undefined num9  undefined num10 
+</result>
+<interpretation for="score">
+										<text range=">=1">患者有较高风险发生严重不良转归</text>
+										<text range="<1">患者有较低风险发生严重不良转归</text>
+								</interpretation>
+</formula>

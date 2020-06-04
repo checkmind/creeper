@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula id="10">
+<input id="select1" type="select" label="急诊胸痛患者的HEART评分(HEART Score/chest pain in the ER, ESC 2011)">
+<option short="高度怀疑" value="2">高度怀疑</option>
+<option short="中度怀疑" value="1">中度怀疑</option>
+<option short="轻度怀疑或排除" value="0">轻度怀疑或排除</option>
+<option short="ST段显著压低" value="2">ST段显著压低</option>
+<option short="非特异性改变(复极化异常/LBBB/PM)" value="1">非特异性改变(复极化异常/LBBB/PM)</option>
+<option short="正常" value="0">正常</option>
+<option short="≥65岁" value="2">≥65岁</option>
+<option short="45-65岁" value="1">45-65岁</option>
+<option short="≤45岁" value="0">≤45岁</option>
+<option short="≥3个冠心病危险因素或有动脉粥样硬化治疗史" value="2">≥3个冠心病危险因素或有动脉粥样硬化治疗史</option>
+<option short="1-2个危险因素" value="1">1-2个危险因素</option>
+<option short="无已知危险因素" value="0">无已知危险因素</option>
+<option short="≥3倍正常值上限" value="2">≥3倍正常值上限</option>
+<option short="1-3倍正常值上限" value="1">1-3倍正常值上限</option>
+<option short="<正常值上限" value="0"><正常值上限</option>
+</input><result id="score" type="score" label="结果" >
+select1
+</result>
+</formula>
